@@ -1,0 +1,72 @@
+/*初始化*/
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+div,
+span,
+input,
+ol,
+ul,
+dl,
+a,
+i,
+table,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+    -webkit-tap-highlight-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: 0 none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0 none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+html,body {
+		background-color: #ffffff;
+        max-width: 640px;
+        margin: 0 auto;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,103 @@
+// 顶部通栏
+@rem: 16rem;
+@color: #79BE0B;
+.yl_nav {
+    width: 100%;
+    height: 25/@rem;
+    background-color: @color;
+    position: fixed;
+    z-index: 99;
+    max-width: 640px;
+    >ul {
+        >li {
+            float: left;
+            width: 16.66%;
+            line-height: 23/@rem;
+            text-align: center;
+            >a {
+                color: #ffffff;
+                font-size: 10/@rem;
+            }
+        }
+    }
+}
+
+// 轮播图
+.swiper-container {
+    width: 100%;
+    // height: 100%;
+    padding-top: 25/@rem;
+    img {
+        width: 100%;
+    }
+}
+
+// 菜单栏
+.yl_menu {
+    width: 100%;
+    margin-top: 10/@rem;
+    >ul {
+        >li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            >a {
+                width: 100%;
+                >p {
+                    font-size: 10/@rem;
+                    margin: 8/@rem 0 12/@rem;
+                }
+                >img {
+                    width: 40/@rem;
+                    height: 40/@rem;
+                }
+            }
+        }
+    }
+}
+
+// 宜丽头条
+.yl_new {
+    position: relative;
+    width: 100%;
+    height: 55/@rem;
+    >.new_logo {
+        float: left;
+        width: 65/@rem;
+        >img {
+            width: 100%;
+            border-right: 1px solid #333;
+        }
+    }
+    >.new_text {
+        overflow: hidden;
+        padding: 6/@rem 0 6/@rem 15/@rem;
+        >p {
+            width: 100%;
+            font-size: 9/@rem;
+            margin-bottom: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            &::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 5px;
+                background-color: @color;
+                position: absolute;
+                left: 70/@rem;
+                top: 9/@rem;
+            }
+        }
+    }
+}
+
+// 图片
+.new_img {
+    width: 100%;
+    >img {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
